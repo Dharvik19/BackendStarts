@@ -80,4 +80,30 @@ obj1.key1 = 20;
 
 key3 = 123
 
-console.log(obj1.key1, obj1.key3)
+// console.log(obj1.key1, obj1.key3)
+
+// console.log('a');
+
+// console.log('b');
+
+// setTimeout(() => console.log('c'), 3000)
+
+// setTimeout(() => console.log('d'), 0)
+
+// console.log('e');
+//async
+
+async function fun1() {
+    console.log('a');
+    console.log('b');
+    const msg1 = await new Promise((res, rej) => {
+        setTimeout(() => res('c'), 1000)
+    })
+    const msg2 = await new Promise((res, rej) => {
+        setTimeout(() => res('d'), 0)
+    })
+    console.log(msg1);
+    console.log(msg2);
+    console.log('e');
+}
+fun1()
