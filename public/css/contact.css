@@ -1,0 +1,82 @@
+.product-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.form-control {
+    margin: 1rem 0;
+    margin-top: 80px;
+}
+
+.forborder{
+
+    border: 4px solid yellow;
+    margin-top: 130px;
+    height: 280px;
+    width: 400px;
+
+}
+
+#name{
+
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 10px;
+
+}
+
+.labelclass{
+
+    margin-left: 160px;
+
+}
+
+.buttonmargin{
+
+    margin-left: 150px;
+
+}
+
+#email{
+
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 10px;
+
+
+}
+
+.form-space{
+
+    border: 2px solid black;
+    height: 500px;
+
+}
+
+.form-control label,
+.form-control input {
+    display: block;
+    width: 100%;
+}
+
+.form-control input {
+    border: 1px solid #dbc441;
+    font: inherit;
+    border-radius: 2px;
+}
+
+button {
+    font: inherit;
+    border: 1px solid #3e00a1;
+    color: #3e00a1;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: #3e00a1;
+    color: white;
+}
