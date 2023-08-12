@@ -6,12 +6,9 @@ const rootDir = require('../util/path');
 
 const router  =  express.Router();
 
-router.get('/contact', (req, res, next)=>{
-    res.sendFile(path.join(rootDir,"views", 'contact.html'));
-})
+const contactController = require('../controllers/contactus')
+router.get('/contact', contactController.getContactUs);
 
-router.post("/success", (req, res, next)=>{
-    res.send("<h1>From filled succesfully</h1>");
-})
+router.post("/success",contactController.postContact );
 
 module.exports = router;
